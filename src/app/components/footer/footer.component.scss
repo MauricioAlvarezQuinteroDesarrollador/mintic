@@ -1,0 +1,107 @@
+footer{
+    background: #3366CC;
+    color: white;
+    font-size: 14px;
+    padding: 40px 0;
+
+    .container{
+        >div{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .column{
+            flex: 1 0 19%; /* explanation below */
+        }
+        .imagenes{
+            text-align: center;
+            
+            img{
+                display: block;
+                margin:  0 auto;
+            }
+            
+            .marca{
+                margin-top: 47px;
+            }
+            
+        }
+        
+        .separador{
+            width: 1px;
+            height: 270px;
+            background: white;
+            margin: 0 40px;
+            margin-top: 29px;
+        }
+    
+        .titulo_portal{
+            font-size:20px;
+            margin-bottom: 24px;
+        }
+        .info_description{
+            margin-bottom: 12px;
+        }
+
+        .titulo_icon{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            display: flex;
+            margin-bottom: 20px;
+            img{
+                margin-right: 16px;
+            }
+        }
+        .correo{
+            margin-top: 10px;
+        }
+        .llamadas{
+            margin-top: 50px;
+
+            span{
+                text-decoration: underline;
+                display:block
+            }
+        } 
+
+        .mapa{
+            margin-bottom: 50px;
+            span{
+                text-decoration: underline;
+                display:block
+            }
+        }
+        .redes{
+            margin-top: 50px;
+
+            >div{
+                display:flex;
+                align-items: center;
+                margin-bottom: 10px;
+
+                :nth-last-child(odd){
+                    margin-left: 10px;
+                    text-decoration: underline
+
+                }
+            }
+        }
+
+    }
+    
+}
+
+
+@media only screen and (max-width : 768px) {
+    .container{
+        >div{
+            display: block!important;
+            
+        }
+    }
+    .separador{
+        display: none!important
+    }
+    .column{
+        flex: 1 0 48%!important;
+    }
+}

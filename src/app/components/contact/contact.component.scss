@@ -1,0 +1,46 @@
+.contact{
+    margin-top: 63px; 
+    margin-bottom: 53px;
+}
+.emergencia{
+    font-size: 24px;
+    color: #004884;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.linea_atencion{
+    color: #004884;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-top: 14px;
+    margin-bottom: 36px; 
+}
+
+.numero{
+    color: #024884;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 7px 15px;
+    display: inline-block;
+}
+.descripcion_linea{
+    color: #4B4B4B;
+    font-size: 18px;
+}
+
+.lista_lineas{
+    >div{
+        width:50%;
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    
+    .lista_lineas{
+        >div{
+            width:100%;
+            display: block;
+        }
+    }
+}

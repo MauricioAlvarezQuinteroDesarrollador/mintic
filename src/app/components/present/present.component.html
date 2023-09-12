@@ -1,0 +1,15 @@
+<div class="present" >
+        <div class="container">
+            <div class="actualidad">Actualidad</div>
+            <div class="titulo">{{description?.titulo}}</div>
+
+            <div class="cards">
+                <ng-container *ngFor="let new of news">
+                    <app-information [title]="new.titulo" [date]="new.textoFecha" [image]="new.imagen"/>
+                </ng-container>
+                
+            </div>
+
+            <div class="ver_noticias"><button>Ver más noticias</button></div>
+        </div>
+    </div>

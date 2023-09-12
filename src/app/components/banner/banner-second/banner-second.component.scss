@@ -1,0 +1,41 @@
+.informacion-banner{
+    height: 40px;
+    background: #F42F63;
+}
+.container{
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+.icono{
+    margin-right: 20px;
+}
+
+.titulo{
+    font-size: 15px; 
+    color: white;
+}
+
+.subtitulo{
+   margin-left: auto;
+   font-size: 13px;
+   color: white;
+   text-decoration: underline
+}
+
+
+@media only screen and (max-width : 768px) {
+    .informacion-banner{
+        height: auto;
+        padding: 10px 0;
+    }
+    .container{
+        display: block!important;
+        width: 95%!important;
+    }
+    
+}

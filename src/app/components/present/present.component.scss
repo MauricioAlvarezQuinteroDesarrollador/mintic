@@ -1,0 +1,56 @@
+.present{
+
+    .container{
+        padding: 35px 0px;
+
+        .actualidad{
+            color: #004884;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+        }
+
+        .titulo{
+            color: #4B4B4B;
+            margin-top: 10px; 
+        }
+        
+        .cards{
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+
+        .ver_noticias{
+            text-align: center;
+            margin-top: 50px;
+            
+            button{
+                color: #3366CC;
+                width: 200px;
+                height: 42px;
+                /* UI Properties */
+                border: 2px solid #3366CC;
+                border-radius: 21px;
+                font-family: 'Montserrat', sans-serif;
+    
+            }
+        }
+
+        
+    }
+}
+
+
+@media only screen and (max-width : 768px) {
+    .container{
+        >div{
+            display: block!important;
+            
+        }
+    }
+    .separador{
+        display: none!important
+    }
+    .column{
+        flex: 1 0 48%!important;
+    }
+}

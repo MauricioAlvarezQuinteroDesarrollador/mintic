@@ -1,0 +1,43 @@
+header{
+    background-color: #3366CC;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 9px 0;
+
+        .buttons-login{
+            button{
+                border: 2px solid white;
+                color: white;
+                font-size: 16px;
+                border-radius: 25px;
+                padding: 10px 0;
+                width: 129px;
+            }
+
+            button:last-child{
+                border: none;
+                color: #3366CC;
+                background: white;
+                border: 2px solid transparent;
+                margin-left: 10px;
+            }
+
+        }
+
+    }
+
+}
+
+
+@media only screen and (max-width : 768px) {
+    .container{
+        display: block!important;
+    }
+    button:last-child{
+        margin-top: 10px;
+    }
+}
+

@@ -1,0 +1,39 @@
+<div class="tramite">
+  <div class="container">
+  <div class="titulo">{{titulo}}</div>
+  <div *ngIf="imagenes.length>0" class="slider">
+    
+
+    <c-carousel transition="crossfade" [animate]="false" >
+     
+      <c-carousel-inner>
+        <c-carousel-item *ngFor="let image of imagenes;let i = index">
+          <div class="info-slider" *ngFor="let info of image;" >
+            <div class="">
+                <img
+                [src]="info.image"
+                alt="{{info.title}}"
+                class="image-slider"
+                loading="lazy"
+              />
+              <c-carousel-caption class="caption">
+                {{info?.title}}
+              </c-carousel-caption>
+            </div>            
+          </div>
+          
+        </c-carousel-item>
+      </c-carousel-inner>
+      <c-carousel-control [routerLink] caption="Previous" direction="prev"><svg xmlns="http://www.w3.org/2000/svg" width="11.884" height="20" viewBox="0 0 11.884 20">
+        <path id="Trazado_6401" data-name="Trazado 6401" d="M2.261,0,0,2.35,7.345,10,0,17.65,2.261,20l9.622-10Z"/>
+      </svg>
+      </c-carousel-control>
+      <c-carousel-control [routerLink] caption="Next" direction="next"><svg xmlns="http://www.w3.org/2000/svg" width="11.884" height="19.245" viewBox="0 0 11.884 19.245">
+        <path id="Trazado_6401" data-name="Trazado 6401" d="M10.851,6,8.59,8.261l7.345,7.361L8.59,22.983l2.261,2.261,9.622-9.622Z" transform="translate(-8.59 -6)"/>
+      </svg>
+      </c-carousel-control>
+    </c-carousel>
+  </div>
+  
+  </div>
+</div>
